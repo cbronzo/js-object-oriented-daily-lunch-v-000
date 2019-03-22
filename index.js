@@ -26,3 +26,10 @@ let deliveryId = 0;
           }
       );
   }
+  
+   meals(){
+    const custMeals = this.deliveries().map(delivery => delivery.meal() )
+    return [...new Set(custMeals)]
+
+   }
+}

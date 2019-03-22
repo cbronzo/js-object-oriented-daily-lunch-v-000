@@ -78,8 +78,9 @@ customers(){
   )}
 
 static byPrice() {
-      return store.meals.sort((a, b) => a.price < b.price);
+      return store.meals.sort((a, b) => a.price < b.price)
     }
+ }
 
  class Delivery {
   constructor(mealId, neighborhoodId, customerId){
